@@ -1,0 +1,74 @@
+@import "components/my_variables"
+@import "materialize"
+@import "_mixins/mixins"
+@import "_mixins/mixin"
+@import "vars"
+@import "fonts"
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	// font-family: $default-font
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+	input, textarea
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+.clearfix
+	display: block
+	clear: both
+	content: ""
+#sidenav-overlay
+	z-index: 98
+#mobile-demo
+	z-index: 99
+
+.navbar-fixed
+	nav
+		background-color: #fff
+		ul
+			li
+				a
+					color: $grey-dark
+	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i
+		padding: 22px 0 30px
+		margin-top: 0
+nav
+	background-color: transparent
+	ul
+		top: -15px
+		position: relative
+		li 
+			a
+				&:hover
+					background-color: transparent
+					color: $accent-color
+					transition: color .3s ease
+				padding: 15px 20px
+				text-align: center
+				vertical-align: center
+			&.active
+				background-color: $accent-color	
+				border-radius: 25px
+				a
+					color: #fff
+
+.parallax-container
+	top: -84px
+	z-index: -1
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i
+	height: 44px
+	margin-top: 40px
+	line-height: 8px
+.secondary-sect
+	height: 900px
+@import "media" // Always at the end
