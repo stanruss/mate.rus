@@ -14,8 +14,10 @@ var gulp          = require('gulp'),
 
 gulp.task('js', function() {
 	return gulp.src([
-		'app/js/jquery-3.2.1.min.js',
+		'app/libs/jquery/dist/jquery-2.1.3.min.js',
 		'app/js/materialize.min.js',
+		'app/libs/animate/waypoints.min.js',
+		'app/libs/animate/animate-css.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
