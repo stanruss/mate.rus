@@ -10,7 +10,7 @@ html, body
 	height: 100%
 
 body
-	font-size: 14px
+	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
@@ -67,14 +67,52 @@ nav
 	z-index: 100
 	img
 		z-index: -1
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i
+nav
 	line-height: 35px
-	padding: 15px 0
+	 
 .navbar-fixed
-	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i
-		padding: 5px 0
-		line-height: 40px
-		height: 50px
+	nav
+		height: 65px
+.h2-header
+	text-align: center
+	font-weight: bold
+	margin-top: 100px
+	animation-duration: 1000ms
+	animation-delay: .3s
+.p-header
+	text-align: center
+	animation-duration: 1000ms
+	animation-delay: 400ms
+	margin-top: 40px
+.btn-header
+	animation-duration: 1000ms
+	animation-delay: 400ms
+	left: 50%
+	margin-left: -70px
+	margin-top: 40px
+	border-radius: 40px
+.navbar-fixed
+	.side-nav li.active
+		a
+			color: $grey-dark
+.side-nav li.active
+	background-color: transparent
+	border-radius: 0
+	a
+		&:hover
+			color: $accent-color
+.button-collapse
+	i
+		color: $accent-color
+		border: 1px solid $accent-color
+		padding-left: 15px
+		padding-right: 15px
+.side-nav
+	ul
+		li
+			a
+			
+				
 .secondary-sect
 	height: 900px
 @import "media" // Always at the end
