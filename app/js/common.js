@@ -20,3 +20,10 @@ $('nav').removeClass('animated fadeInDown');
 }
 
 });
+$(window).load(function() {
+
+$(" .services-boxes .one ").animated("fadeInUp ", "fadeOutDown");
+$(" .services-boxes .two ").animated("fadeInUp ", "fadeOutDown");
+$(" .services-boxes .three ").animated("fadeInUp ", "fadeOutDown");
+
+});

@@ -113,6 +113,56 @@ nav
 			a
 			
 				
-.secondary-sect
-	height: 900px
+.services
+	padding: 86px 0 0
+.services-h2
+	position: relative
+	font-weight: bold
+	width: 365px
+	display: block
+	+push-auto
+	animation-duration: 1000ms
+	animation-delay: .3s
+.services-hr
+	width: 70px
+	height: 2px
+	background-color: $accent-color
+	border: none
+	animation-delay: .3s
+	margin-bottom: 20px
+.services-p
+	animation-duration: 1000ms
+	animation-delay: .3s		
+.services-boxes
+	padding: 45px 0
+	.fa-pencil-alt, .fa-smile , .fa-code
+		color: $accent-color
+		font-size: 60px
+		padding: 15px
+		border: 1px solid #f1f1f1
+		border-radius: 50%
+		width: 60px
+		height: 60px
+		margin-bottom: 30px
+	h5
+		font-size: 20px
+		font-weight: bold
+
+	.col
+		padding: 30px 0
+		&:hover
+			.fa-pencil-alt, .fa-smile , .fa-code
+				background-color: $accent-color	
+				color: #fff
+				border: 1px solid $accent-color	
+				transition: all .3s ease
+.services-boxes .one
+	animation-duration: 1000ms
+	animation-delay: 0s
+.services-boxes .two
+	animation-duration: 1000ms
+	animation-delay: .2s
+.services-boxes .three
+	animation-duration: 1000ms
+	animation-delay: .4s
 @import "media" // Always at the end
