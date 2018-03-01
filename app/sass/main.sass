@@ -113,7 +113,7 @@ nav
 			a
 			
 				
-.services
+section
 	padding: 86px 0 0
 .services-h2
 	position: relative
@@ -165,4 +165,60 @@ nav
 .services-boxes .three
 	animation-duration: 1000ms
 	animation-delay: .4s
+.section-title-h2
+	font-weight: bold
+.section-title-hide
+	position: relative
+	height: 501px
+.section-title .section-title-boxes
+	img
+		max-width: 300px
+		max-height: 501px
+		min-width: 300px
+		min-height: 501px
+		position: absolute
+		display: block
+		top: 0
+.section-title.parallax-container 
+      height: 700px
+      z-index: 95
+.section-title-boxes
+	.col
+		padding-bottom: 30px
+	.link
+		&:hover
+			svg
+				background-color: $accent-color	
+				color: #fff
+				border: 1px solid $accent-color	
+				transition: all .3s ease
+				border-radius: 50%
+				padding: 15px
+				width: 60px
+				height: 60px
+	h5
+		font-size: 15px
+		color: $accent-color
+		font-weight: bold
+		
+.dib
+	display: inline-block
+		
+.section-title-boxes-text
+	display: block
+	padding-left: 80px
+	p
+		font-size: 14px
+.section-title-boxes-i
+	float: left
+	display: inline-block
+	text-align: center
+	padding-top: 12px
+	width: 60px
+	height: 60px
+	svg
+		font-size: 45px
+.section-title-p
+	margin-bottom: 60px		
+
 @import "media" // Always at the end

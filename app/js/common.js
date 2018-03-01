@@ -22,8 +22,8 @@ $('nav').removeClass('animated fadeInDown');
 });
 $(window).load(function() {
 
-$(" .services-boxes .one ").animated("fadeInUp ", "fadeOutDown");
-$(" .services-boxes .two ").animated("fadeInUp ", "fadeOutDown");
-$(" .services-boxes .three ").animated("fadeInUp ", "fadeOutDown");
+$(" .services-boxes .one ").animated("fadeInUp ");
+$(" .services-boxes .two ").animated("fadeInUp ");
+$(" .services-boxes .three ").animated("fadeInUp ");
 
 });
