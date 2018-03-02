@@ -18,6 +18,8 @@ gulp.task('js', function() {
 		'app/js/materialize.min.js',
 		'app/libs/animate/waypoints.min.js',
 		'app/libs/animate/animate-css.js',
+		'app/js/jquery.easing.min.js',
+		'app/js/jquery.mixitup.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
