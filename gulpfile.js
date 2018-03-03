@@ -20,6 +20,7 @@ gulp.task('js', function() {
 		'app/libs/animate/animate-css.js',
 		'app/js/jquery.easing.min.js',
 		'app/js/jquery.mixitup.min.js',
+		'app/js/baguetteBox.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

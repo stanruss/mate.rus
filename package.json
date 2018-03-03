@@ -9,6 +9,7 @@
   "author": "Stanruss",
   "license": "ISC",
   "devDependencies": {
+    "baguettebox.js": "^1.10.0",
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
