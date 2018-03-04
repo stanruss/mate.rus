@@ -58,3 +58,9 @@ $(function () {
         filterList.init();  
     }); 
 baguetteBox.run('.gallery');
+$(window).on('resize', function(event) {
+  $('.portfolio').jQueryEqualHeight();
+});
+$(window).on('load', function(event) {
+  $('.portfolio').jQueryEqualHeight();
+});

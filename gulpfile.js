@@ -21,6 +21,7 @@ gulp.task('js', function() {
 		'app/js/jquery.easing.min.js',
 		'app/js/jquery.mixitup.min.js',
 		'app/js/baguetteBox.js',
+		'app/js/jquery-equal-height.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
