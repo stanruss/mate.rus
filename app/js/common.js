@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
-	$('.modal').modal();
+	$('.modal').modal({
+		dismissible: false,
+	});
 	
 });
 $(window).scroll(function () {
