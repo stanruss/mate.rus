@@ -1,11 +1,16 @@
 $(document).ready(function() {
 	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
+	$('.scrollspy').scrollSpy({
+		scrollOffset: 20,
+
+	});
 	$('.modal').modal({
 		dismissible: false,
 	});
 	
 });
+
 $(window).scroll(function () {
 
 	if ($(this).scrollTop() > 130) {
@@ -29,6 +34,8 @@ $(window).load(function() {
 $(" .services-boxes .one ").animated("fadeInUp ");
 $(" .services-boxes .two ").animated("fadeInUp ");
 $(" .services-boxes .three ").animated("fadeInUp ");
+$(" .video-promo h2, .video-promo p").animated("zoomIn");
+$(" .video-promo a").animated("fadeInUp");
 
 });
 
