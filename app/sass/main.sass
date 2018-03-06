@@ -29,6 +29,10 @@ body
 	display: block
 	clear: both
 	content: ""
+.container-full
+	width: 100%
+	max-width: 1200px
+	+push-auto
 #sidenav-overlay
 	z-index: 98
 #mobile-demo
@@ -47,7 +51,10 @@ header
 				&.active
 					color:#fff
 	.button-collapse
-		top: 50px					
+		top: 50px	
+		right: -50px
+		i
+			background-color: #fff				
 nav
 	background-color: transparent
 	z-index: 10000
@@ -245,6 +252,18 @@ section
 	background-color: $accent-color
 	border: none
 	margin-bottom: 20px
+.team-h2
+	position: relative
+	font-weight: bold
+	text-align: center
+	display: block
+	text-transform: uppercase
+.team-hr
+	width: 70px
+	height: 2px
+	background-color: $accent-color
+	border: none
+	margin-bottom: 20px
 .portfolio-h2
 	position: relative
 	font-weight: bold
@@ -275,6 +294,59 @@ section
 		font-weight: bold
 .counters-i
 	font-size: 50px
-
+.team-box
+	margin-bottom: 40px
+.team-img
+	img
+		max-width: 100%
+.team-text
+	h3
+		font-weight: bold
+	p
+		font-size: 14px
+.team-icons
+	svg
+		margin: 10px 2px 30px
+		display: inline-block
+	.fa-linkedin-in
+		width: 30px
+		height: 30px
+		background-color: #fff
+		padding: 7px
+		border-radius: 30px
+		&:hover
+			background-color: #007bb6
+			color: #fff
+			transition: all .3s ease
+	.fa-google-plus-g
+		width: 30px
+		height: 30px
+		background-color: #fff
+		padding: 7px
+		border-radius: 30px
+		&:hover
+			background-color: #dd4d42
+			color: #fff
+			transition: all .3s ease
+	.fa-twitter
+		width: 30px
+		height: 30px
+		background-color: #fff
+		padding: 7px
+		border-radius: 30px
+		&:hover
+			background-color: #1da1f2
+			color: #fff
+			transition: all .3s ease
+	.fa-facebook-f
+		width: 30px
+		height: 30px
+		background-color: #fff
+		padding: 7px
+		border-radius: 30px
+		&:hover
+			background-color: #4867aa
+			color: #fff
+			transition: all .3s ease
 
 @import "media" // Always at the end
