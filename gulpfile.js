@@ -23,6 +23,7 @@ gulp.task('js', function() {
 		'app/js/baguetteBox.js',
 		'app/js/jquery-equal-height.js',
 		'app/js/jquery.spincrement.min.js',
+		'app/js/jQuery.scrollSpeed.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
