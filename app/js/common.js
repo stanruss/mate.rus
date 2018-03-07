@@ -1,6 +1,27 @@
 $(document).ready(function() {
 	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    navText:['Prev','Next'],
+    nav:false,
+    smartSpeed:1500,
+    autoplay:true,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
 	$('.scrollspy').scrollSpy({
 		scrollOffset: 20,
 
@@ -96,10 +117,10 @@ $(document).ready(function() {
         }
       });
 });
-$(function() {  
-	// Default
-	jQuery.scrollSpeed(100, 800);
+// $(function() {  
+// 	// Default
+// 	jQuery.scrollSpeed(100, 800);
 
-	// Custom Easing
-	jQuery.scrollSpeed(100, 800, 'easeOutCubic');
-});
+// 	// Custom Easing
+// 	jQuery.scrollSpeed(100, 800, 'easeOutCubic');
+// });
