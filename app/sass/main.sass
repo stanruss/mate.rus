@@ -42,8 +42,21 @@ body
 header
 	#top-menu
 		z-index: 10000
+		img
+			width: 200px
+			height: auto
+			display: block
+			position: relative
+			min-width: auto
+			min-height: auto
+			bottom: 0
+			transform: none
+			left: 0
+			top: -10px
+			z-index: 200
 .brand-logo
 	margin-left: 25px
+
 .main-menu
 	margin-right: 25px
 .navbar-fixed
@@ -57,45 +70,80 @@ header
 				&.active
 					color:#fff
 	.button-collapse
-		top: 50px	
-		right: -50px
+		top: 15px	
+		right: -15px
+		
 		i
-			background-color: #fff				
+			background-color: $accent-color				
 nav
-	background-color: transparent
+	background-color: $white
 	z-index: 10000
 	ul
 		li
 			&.active
-				background-color: transparent
+				background-color: $white
 			a
+				color: $grey-dark
 				&:hover
 					background-color: transparent
 					color: $accent-color
 				&.active
 					background-color: $accent-color
 					border-radius: 18px
-					color: $grey-dark
+					color: $white
 					&:hover
-						color: $grey-dark
+						color: $grey-light
+						font-weight: bold
 .parallax-container
 	z-index: 100
-	height: 100vh
+	height: 550px
 	img
 		z-index: -1
 nav
 	line-height: 35px
+.layout
+	position: absolute
+	width: 100%
+	height: 100%
+	z-index: -1
+	background-color: rgba(1,98,107,.7)
 .header-top
-	.s7, .s5
+	img.filin-head
+		display: flex
+		position: relative
+		width: 100%
+		max-width: 400px
+		height: auto
+		bottom: auto
+		left: auto
+		min-width: 200px
+		min-height: auto
+		transform: none
+		margin-top: -64px
+	p
+		font-size: 12px
+		letter-spacing: 1.9px
+	h3
+		text-shadow: 1px 2px 3px #000
+		line-height: 2
+	h1
+		text-shadow: 1px 2px 3px #000
+		margin-top: -64px
+		span
+			color: $accent-color
+			text-shadow: 1px 0 3px #222
+	.l7, .l5
 		display: flex
 		flex-direction: column
 		justify-content: center
 		align-items: center
-		height: 100vh
-		margin-top: -64px 
+		height: 550px
+		position: relative
+
 .navbar-fixed
 	nav
 		height: 65px
+		text-shadow: none
 .h2-header
 	text-align: center
 	font-weight: bold
@@ -125,11 +173,31 @@ nav
 		color: $grey-dark
 .button-collapse
 	i
-		color: $accent-color
-		border: 1px solid $accent-color
+		color: $white
+		background-color: $accent-color
+		border: 1px solid $white
 		padding-left: 15px
 		padding-right: 15px
-	
+section.about
+	padding: 0	
+	border-top: 1px #222 solid
+	border-bottom: 1px #222 solid
+	.about-h2
+		position: relative
+		font-weight: bold
+		text-align: center
+		display: block
+		+push-auto
+		text-transform: uppercase
+		animation-duration: 1000ms
+		animation-delay: .3s
+	.about-hr
+		width: 70px
+		height: 2px
+		background-color: $accent-color
+		border: none
+		animation-delay: .3s
+		margin-bottom: 20px	
 section
 	padding: 86px 0 0
 .services-h2
