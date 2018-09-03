@@ -52,9 +52,9 @@ $('nav').removeClass('animated fadeInDown');
 });
 $(window).load(function() {
 
-$(" .services-boxes .one ").animated("fadeInUp ");
-$(" .services-boxes .two ").animated("fadeInUp ");
-$(" .services-boxes .three ").animated("fadeInUp ");
+// $(" .services-boxes .one ").animated("fadeInUp ");
+// $(" .services-boxes .two ").animated("fadeInUp ");
+// $(" .services-boxes .three ").animated("fadeInUp ");
 $(" .video-promo h2, .video-promo p").animated("zoomIn");
 $(" .video-promo a").animated("fadeInUp");
 
